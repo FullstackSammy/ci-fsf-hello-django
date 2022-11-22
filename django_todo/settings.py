@@ -28,7 +28,7 @@ SECRET_KEY = os.environ.get("SECRETKEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['git.heroku.com/fssammy-django-todo-app.git']
+ALLOWED_HOSTS = [os.environ.get('HEROKU_HOSTNAME')]
 
 
 # Application definition
